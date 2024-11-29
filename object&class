@@ -1,0 +1,29 @@
+//storing diffrent values into private variable using object arguement
+#include <iostream>
+using namespace std;
+class ex{
+    int x,y;
+    public:
+    void storedata(int p,int q)
+    {
+        x=p;
+        y=q;
+    }
+    void display(){
+        cout<<"x="<<x<<"\n"<<"y="<<y;
+    }
+    ex()
+    {
+        cout<<"Value is assighned"<<"\n";
+    }
+    };
+    
+int main() {
+ex e1,e2;
+e1.storedata(5,7);
+e1.display();
+e2.storedata(1,4);
+cout<<endl;
+e2.display();
+    return 0;
+}
