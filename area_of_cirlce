@@ -1,0 +1,28 @@
+//c++ program for find the area & circumference of the cirlce 
+#include <iostream>
+using namespace std;
+class circle{
+    private:
+    int redious;
+    
+    public:
+    void setdata(int a){
+        redious=a;
+    }
+    void area(){
+        double a=3.14*redious*redious;
+        cout<<"Area of the circle :"<<a<<endl;
+    }
+    void circumference(){
+        double circum=2*3.14*redious;
+        cout<<"Circumference of circle :"<<circum;
+    }
+};
+int main() {
+circle c1;
+c1.setdata(5);
+c1.area();
+c1.circumference();
+
+    return 0;
+}
